@@ -193,11 +193,30 @@ footer {
     margin-top: 80px;
 }
 
-/* 
-   Mobile Responsiveness
-    */
+
 @media (max-width: 768px) {
-    .hero { flex-direction: column; text-align: center; }
-    .hero-image { text-align: center; margin-top: 20px; }
-    .btn-secondary { margin-left: 0; margin-top: 10px; }
-} 
+    /* Fix the navigation for small screens */
+    nav ul { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 12px; 
+        margin-top: 10px;
+    }
+    nav a {
+        font-size: 0.85em; /* Slightly smaller text for mobile */
+    }
+    
+    /* Fix the hero layout for small screens */
+    .hero { 
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .hero-image { 
+        text-align: center; 
+        margin-top: 20px; 
+    }
+    .btn-secondary { 
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+}
