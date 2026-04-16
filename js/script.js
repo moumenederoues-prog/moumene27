@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (response.ok) {
                     // Success! Show the message and clear the form
                     formStatus.textContent = "Transmission successful. I will be in touch soon!";
-                    formStatus.style.color = "#00f0ff"; // Keep the cyan color
+                    formStatus.style.color = "#111111"; // Keep the cyan color
                     formStatus.style.display = "block";
                     contactForm.reset();
                 } else {
